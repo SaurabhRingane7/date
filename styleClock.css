@@ -1,0 +1,77 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center; 
+	margin-top: 160px;
+}
+
+.Mainbox{ 
+    width: 600px;
+    height: 255px;
+    border: 5px solid black;
+    display: flex;  
+}
+.leftBox{
+    border: 2px solid black;
+    flex-grow: 1;  
+}
+.item1Wrapper{
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+.item1{
+	display: flex;   
+}
+.hours{
+	 border: 2px solid black;
+	 height: 80px;
+	 width: 80px;
+	 margin-right: 10px;
+	 border-radius: 10px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-size: 50px; 
+}
+.minutes{
+	 border: 2px solid black;
+	 height: 80px;
+	 width: 80px;
+	 border-radius: 10px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-size: 50px; 
+}
+
+
+.item2Wrapper{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+} 
+.seconds{
+	 border: 2px solid black;
+	 height: 80px;
+	 width: 150px;  
+	 font-size: 40px;
+	 font-family: fantasy;
+	 display: flex;justify-content: center;align-items: center;
+}
+.periods{
+	width: 40px;height: 40px;border-radius: 50%;border: 1px solid red;
+	display: flex;justify-content: center;align-items: center;
+	margin-left: 56px;
+	margin-top: 6px;
+}
+
+
+
+.rightBox{
+	border: 2px solid black; 
+	flex-grow: 1;
+}

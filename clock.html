@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styleClock.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+         <div class="Mainbox">
+         	     <div class="leftBox">
+
+         	     	   <div class="item1Wrapper">
+	         	     	  <div class="item1">
+	         	     	  	   <div class="hours" id="hours">00</div>
+	         	     	       <div class="minutes" id="minutes">00</div>
+	         	     	  </div>
+	         	      </div>
+	         	     
+	         	      <div class="item2Wrapper">   
+	         	     	  <div class="item2">
+	         	     	  	  <div class="seconds" id="seconds">00</div>
+	         	     	  	  <div class="periods" id="period">AM</div>
+	         	     	  </div>
+         	     	  </div> 
+         	     </div>
+         	     <div class="rightBox">
+         	     	 adadsadad
+         	     </div>
+         </div>
+    </div>
+
+ 
+
+  <script type="text/javascript">
+  	     
+
+              let hourss=document.getElementById("hours");
+              let minutess=document.getElementById("minutes");
+              let secondss=document.getElementById("seconds");
+              let periodss=document.getElementById("period");
+
+
+function clock(){
+
+	console.log(hourss);
+           let H=new Date().getHours();
+           let M=new Date().getMinutes();
+           let S=new Date().getSeconds();
+           let ampm;
+
+            if(H>12){
+              ampm="PM"
+            }
+            else{
+            	 ampm="AM"
+            }
+            
+       
+          // set data to the variable
+
+
+          hourss.innerText=H;
+          minutess.innerText=M;
+          secondss.innerText=S;
+          periodss.innerText=ampm;
+}
+         
+    setInterval(clock,1000)
+
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>
